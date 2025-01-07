@@ -1,0 +1,28 @@
+:root {
+  /* BRAND */
+    --color-brand-red: #E3646E;
+    --color-brand-purple: #BB72E9;
+    --color-brand-blue: #3996DB;
+    --color-brand-green: #82BC4F;
+    --color-brand-yellow: #EABD5F;
+
+  /* BASE */
+    --color-gray-100: #0D0E11;
+    --color-gray-200: #16181D;
+    --color-gray-300: #292C34;
+    --color-gray-400: #878EA1;
+    --color-gray-500: #C0C4CE;
+    --color-gray-600: #E2E4E9;
+
+  /* SET TOKENS */
+    /* TEXTS */
+      --color-text-title: var(--color-gray-400);
+      --color-text-paragraph: var(--color-gray-500);
+      --color-text-caption: var(--color-gray-600);
+
+    /* ELEMENTS */
+      --color-background: var(--color-gray-200);
+      --color-shape: var(--color-gray-300);
+      --color-border-light: var(--color-gray-400);
+      --color-border-dark: var(--color-gray-200);
+}

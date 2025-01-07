@@ -1,28 +1,59 @@
 html {
-  /* settings */
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings:
-    "wdth" 100;
+  /* IMPORT */
+    .asap {
+      font-family: "Asap", serif;
+      font-optical-sizing: auto;
+      font-weight: 700;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
 
-  /* family */
-    --ff-sans-primary: "Open Sans", sans-serif;
+    .inconsolata {
+      font-family: "Inconsolata", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      font-variation-settings:
+        "wdth" 100;
+    }
 
-  /* weight */
+    .maven-pro-<uniquifier> {
+      font-family: "Maven Pro", serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+    }
+
+
+
+  /* FAMILY */
+    --ff-sans-primary: "Asap", sans-serif;
+    --ff-sans-secondary: "Maven Pro", sans-serif;
+    --ff-mono-primary: "Inconsolata", mono;
+
+  /* WEIGHT */
     --fw-regular: 400;
     --fw-bold: 700;
   
-  /* size */
-    --fs-xl: 2.25rem;
-    --fs-lg: 2rem;
-    --fs-md: 1.75rem;
+  /* SIZE */
+    --fs-xl: 3.5rem;
+    --fs-lg: 1.5rem;
+    --fs-md: 1.25rem;
     --fs-base: 1rem;
-
-  /* set tokens */ /* font-style | font-weight | font-size | font-family */
-    --font-h1: normal   var(--fw-bold)   var(--fs-xl)/1.361    var(--ff-sans-primary);
-    --font-h2: normal   var(--fw-bold)   var(--fs-lg)/1.375    var(--ff-sans-primary);
-    --font-h3: normal   var(--fw-bold)   var(--fs-md)/1.375    var(--ff-sans-primary);
-    --font-span: normal var(--fw-bold)   var(--fs-base)/1.362  var(--ff-sans-primary);
-    --font-p: normal    var(--fw-medium) var(--fs-base)/1.375  var(--ff-sans-primary);
-    --font-sub: italic  var(--fw-regular) var(--fs-base)/1.362 var(--ff-sans-primary);
+    --fs-sm: 0.875rem;
+    
+  /* SET TOKENS */
+    /* font-style | font-weight | font-size | font-family */
+    /* TITLES */
+      --font-h1: normal   var(--fw-bold)   var(--fs-xl)/1.2    var(--ff-sans-primary);
+      --font-h2: normal   var(--fw-bold)   var(--fs-lg)/1.2    var(--ff-sans-primary);
+      --font-h3: normal   var(--fw-bold)   var(--fs-base)/1.2    var(--ff-sans-primary);
+    
+    /* SUBTITLES */
+      --font-sub: normal var(--fw-regular)   var(--fs-md)/1.2  var(--ff-mono-primary);
+    
+    /* PARAGRAPHS */
+      --font-p: normal    var(--fw-regular) var(--fs-base)/1.4  var(--ff-sans-secondary);
+      --font-caption: normal  var(--fw-regular) var(--fs-sm)/1.4 var(--ff-sans-secondary);
 }
