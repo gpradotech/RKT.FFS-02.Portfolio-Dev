@@ -16,9 +16,9 @@
 
   /* SET TOKENS */
     /* TEXTS */
-      --color-text-title: var(--color-gray-400);
+      --color-text-title: var(--color-gray-600);
       --color-text-paragraph: var(--color-gray-500);
-      --color-text-caption: var(--color-gray-600);
+      --color-text-caption: var(--color-gray-400);
 
     /* ELEMENTS */
       --color-background: var(--color-gray-200);
