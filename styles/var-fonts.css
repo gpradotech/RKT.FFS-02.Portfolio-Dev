@@ -1,28 +1,27 @@
 html {
-  /* settings */
-    font-family: "Open Sans", sans-serif;
-    font-optical-sizing: auto;
-    font-variation-settings:
-    "wdth" 100;
-
   /* family */
-    --ff-sans-primary: "Open Sans", sans-serif;
+    --ff-sans-primary: "Maven Pro", sans-serif;
+    --ff-sans-secondary: "Asap", sans-serif;
+
+    --ff-mono-primary: "Inconsolata", monospace;
 
   /* weight */
     --fw-regular: 400;
     --fw-bold: 700;
   
   /* size */
-    --fs-xl: 2.25rem;
-    --fs-lg: 2rem;
-    --fs-md: 1.75rem;
-    --fs-base: 1rem;
+    --fs-xl: 3.5rem; /* 56px */
+    --fs-lg: 1.5rem; /* 24px */
+    --fs-md: 1.25rem; /* 20px */
+    --fs-base: 1rem; /* 16px */
+    --fs-sm: 0.875rem; /* 14px */
 
-  /* set tokens */ /* font-style | font-weight | font-size | font-family */
-    --font-h1: normal   var(--fw-bold)   var(--fs-xl)/1.361    var(--ff-sans-primary);
-    --font-h2: normal   var(--fw-bold)   var(--fs-lg)/1.375    var(--ff-sans-primary);
-    --font-h3: normal   var(--fw-bold)   var(--fs-md)/1.375    var(--ff-sans-primary);
-    --font-span: normal var(--fw-bold)   var(--fs-base)/1.362  var(--ff-sans-primary);
-    --font-p: normal    var(--fw-medium) var(--fs-base)/1.375  var(--ff-sans-primary);
-    --font-sub: italic  var(--fw-regular) var(--fs-base)/1.362 var(--ff-sans-primary);
+  /* set tokens */ 
+  /* font-style |             font-weight |       font-size |           font-family */
+    --font-title-lg: normal   var(--fw-bold)      var(--fs-xl)/1.2      var(--ff-sans-primary);
+    --font-title-md: normal   var(--fw-bold)      var(--fs-lg)/1.2      var(--ff-sans-primary);
+    --font-title-sm: normal   var(--fw-bold)      var(--fs-base)/1.2    var(--ff-sans-primary);
+    --font-subtitle: normal   var(--fw-regular)   var(--fs-md)/1.2      var(--ff-sans-secondary);
+    --font-text-md: normal    var(--fw-regular)   var(--fs-base)/1.4    var(--ff-mono-primary);
+    --font-text-sm: italic    var(--fw-regular)   var(--fs-sm)/1.4      var(--ff-mono-primary);
 }
