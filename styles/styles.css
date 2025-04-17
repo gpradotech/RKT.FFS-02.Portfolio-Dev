@@ -1,0 +1,205 @@
+/* fonts */
+html {
+  & h1 {
+    font: var(--font-h1);
+  }
+  & h2 {
+    font: var(--font-h2);
+  }
+  & h3 {
+    font: var(--font-h3);
+  }
+
+  & p {
+    font: var(font-paragraph);
+    color: var(--color-text-secondary);
+  }
+
+  & .description {
+    font: var(--font-sub);
+    text-align: center;
+  }
+
+  & .headline {
+    font: var(--font-span);
+    text-transform: uppercase;
+    color: var(--color-text-headline);
+  }
+
+  & ul li, h4 {
+    font: var(--font-span);
+  }
+}
+
+/* colors */
+html {
+  .blue {
+    color: var(--color-brand-blue);
+  }
+  .purple {
+    color: var(--color-brand-purple);
+  }
+  .pink {
+    color: var(--color-brand-pink);
+  }
+  .orange {
+    color: var(--color-brand-orange);
+  }
+}
+
+/* containers */
+body {
+  padding-inline: 5rem;
+}
+
+img {
+  border-radius: 1.5rem;
+  object-fit: cover;
+  height: auto;
+  min-height: 21.875rem;
+  width: 50%;
+}
+
+footer {
+  margin-block: 4.5rem 3rem;
+  text-align: center;
+  font-family: Alice, 'Times New Roman', Times, serif;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .25rem;
+}
+
+/* components */
+.hr {
+  height: 1px;
+  background-color: var(--color-border-primary);
+}
+
+.checkpoint-cover {
+  display: grid;
+  gap: 1.5rem; 
+  
+  & img {
+    width: 100%;
+    min-height: 15rem;
+    max-height: 41.25rem;
+  }
+ }
+
+.checkpoint {
+  display: flex !important;
+  gap: 1.5rem;
+
+  & figcaption {
+    display: grid;
+    gap: 0.5rem;
+
+    & h4 {
+      margin-top: 1rem;
+    }
+
+    & ul li {
+      display: flex;
+      align-items: center;
+      gap: .5rem;
+      margin-left: .5rem;
+
+      &::before {
+        content: '';
+        display: inline-block;
+        width: 0.25rem;
+        height: 0.25rem;
+  
+        background-color: black;
+        border-radius: 50%;
+      }
+    } 
+  }
+}
+
+main {
+  margin-top: 5.5rem;
+  max-width: 70rem;
+  margin-inline: auto;
+
+  display: grid;
+  gap: 2.5rem;
+
+  & > header {
+    display: grid;
+    gap: 2.5rem;
+
+    & .text {
+      display: grid;
+      gap: .5rem;
+    }
+
+    & figcaption {
+      margin: 0 auto;
+    }
+
+    & .checkpoint-cover {
+      display: grid;
+      gap: 1.5rem;
+    }
+  }
+
+  & .content-list {
+    display: grid;
+    gap: 4rem;
+
+    & .title-list {
+      display: grid;
+      gap: .5rem;
+    }
+
+    & .list {
+      display: grid;
+      gap: 3rem;
+
+      & .checkpoint {
+        display: grid;
+        gap: 1.5rem;
+
+        & figcaption {
+          display: grid;
+          gap: .25rem;
+        }
+      }
+    }
+  }
+}
+
+[role="listitem"] {
+  &.index1::before {
+  content: "1. ";
+  }
+
+  &.index2::before {
+    content: "2. ";
+    }
+
+    &.index3::before {
+      content: "3. ";
+      }
+}
+
+.final {
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  body {
+    padding-inline: 1rem;
+  }
+
+  .checkpoint {
+    display: grid !important;
+
+    & img {
+      width: 100%;
+    }
+  }
+}
