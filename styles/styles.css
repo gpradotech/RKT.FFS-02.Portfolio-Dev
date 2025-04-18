@@ -170,3 +170,35 @@ main {
     }
   }
 }
+
+.services {
+  padding: 88px 8px 120px;
+  display: grid;
+  gap: 56px;
+  justify-items: center;
+  text-align: center;
+
+  & .services-cards {
+    display: flex;
+    gap: 24px;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & .services-card {
+    border: solid 2px var(--color-base-3);
+    width: 280px;
+    max-width: calc(100vw - 16px);
+    border-radius: 12px;
+    padding: 24px;
+    display: grid;
+    gap: 20px;
+    background-color: var(--color-base-3);
+  }
+    
+    & .services-card-text {
+      display: grid;
+      gap: 8px;
+      text-align: left;
+    }
+  }
+}
