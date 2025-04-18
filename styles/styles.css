@@ -177,6 +177,7 @@ main {
   gap: 56px;
   justify-items: center;
   text-align: center;
+  background-color: var(--color-base-1);
 
   & .services-cards {
     display: flex;
