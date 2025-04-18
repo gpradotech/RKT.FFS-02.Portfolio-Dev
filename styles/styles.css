@@ -25,9 +25,18 @@ html {
     color: var(--color-title);
   }
 
+  & h2 {
+    font: var(--font-title-md);
+    color: var(--color-title);
+  }
+
+  & h3 {
+    font: var(--font-title-sm);
+    color: var(--color-title);
+  }
+
   & .subtitle {
     font: var(--font-subtitle);
-    color: var(--color-text-primary);
   }
 }
 
@@ -44,6 +53,10 @@ html {
   display: grid;
   gap: 92px;
   justify-items: center;
+
+  & .arrow-down {
+    animation: sobeDesce 1.5s ease-in-out infinite;
+  }
 
   & section {
     & .content {
@@ -105,5 +118,55 @@ html {
         border-radius: 999px;
       }
     } 
+  }
+}
+
+main {
+  display: grid;
+  gap: 56px;
+  padding: 72px 0 144px;
+
+  & .main-text {
+    display: grid;
+    gap: 8px;
+    margin: 0 auto;
+    max-width: 1040px;
+    text-align: center;
+  }
+
+  & .main-gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+
+    & .card {
+      width: 330px;
+      max-width: calc(100vw - 16px);
+      min-height: 280px;
+      display: grid;
+      gap: 16px;
+      padding: 12px 12px 24px;
+      background-color: var(--color-base-3);
+      border-radius: 12px;
+      
+      & .card-cover {
+        width: 100%
+        height: 156px;
+        border-radius: 8px;
+        overflow: hidden;
+        
+        & img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      & .card-text {
+        display: grid;
+        gap: 8px;
+      }
+    }
   }
 }
