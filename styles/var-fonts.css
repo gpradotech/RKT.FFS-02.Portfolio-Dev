@@ -21,7 +21,7 @@ html {
     --font-title-lg: normal   var(--fw-bold)      var(--fs-xl)/1.2      var(--ff-sans-primary);
     --font-title-md: normal   var(--fw-bold)      var(--fs-lg)/1.2      var(--ff-sans-primary);
     --font-title-sm: normal   var(--fw-bold)      var(--fs-base)/1.2    var(--ff-sans-primary);
-    --font-subtitle: normal   var(--fw-regular)   var(--fs-md)/1.2      var(--ff-sans-secondary);
+    --font-subtitle: normal   var(--fw-regular)   var(--fs-md)/1.2      var(--ff-mono-primary);
     --font-text-md: normal    var(--fw-regular)   var(--fs-base)/1.4    var(--ff-mono-primary);
     --font-text-sm: italic    var(--fw-regular)   var(--fs-sm)/1.4      var(--ff-mono-primary);
 }
