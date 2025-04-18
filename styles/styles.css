@@ -202,3 +202,47 @@ main {
     }
   }
 }
+
+footer {
+  padding: 128px 8px 200px;
+  background-image: url(../assets/background_contacts.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: grid;
+  gap: 56px;
+  
+  & .footer-text {
+    display: grid;
+    gap: 8px;
+    margin: 0 auto;
+    max-width: 480px;
+    text-align: center;
+  }
+  & .footer-cards {
+    display: grid;
+    gap: 16px;
+    justify-items: center;
+
+    & .footer-link {
+      text-decoration: none;
+      color: var(--color-text-primary);
+    }
+    & .footer-card {
+      width: 280px;
+      max-width: calc(100vw - 16px);
+      border-radius: 12px;
+      padding: 24px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      background-color: var(--color-base-3);
+    }
+    & .footer-card-content {
+      display: flex;
+      gap: 12px;
+      align-items: center;
+      width: 100%;
+    }
+  }
+}
